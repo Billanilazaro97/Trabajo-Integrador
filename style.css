@@ -14,9 +14,41 @@
     .logo img {
         border-radius: 50%;
         margin-bottom: 10px;
-        
-
-        
     }
     
+}
+
+nav {
+    background-color: #ff6700;
+    padding: 10px 0;
+    margin: 10px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Fondamento", cursive;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+
+nav ul li a:hover {
+    background-color: #03071e;
+    border-radius: 4px;
 }
