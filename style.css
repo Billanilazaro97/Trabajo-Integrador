@@ -10,12 +10,10 @@
     max-width: 300px; 
     margin: 0 auto; 
     text-align: center;
-
     .logo img {
         border-radius: 50%;
         margin-bottom: 10px;
     }
-    
 }
 
 nav {
@@ -37,7 +35,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -52,3 +49,4 @@ nav ul li a:hover {
     background-color: #03071e;
     border-radius: 4px;
 }
+
