@@ -1,26 +1,26 @@
+body {
+    background-color: #D0D0B3;
+}
 .logo {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    background-image: url(img/imagen4.jpg);
-    padding: 20px; 
-    border: 2px solid #14213d;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
     border-radius: 10px; 
-    box-shadow: 0px 5px 10px #fca311; 
-    max-width: 300px; 
+    box-shadow: grey;  
     margin: 0 auto; 
-    text-align: center;
-    .logo img {
-        border-radius: 50%;
-        margin-bottom: 10px;
+    img {
+        border-radius: 5px;
     }
 }
 
 nav {
-    background-color: #ff6700;
-    padding: 10px 0;
-    margin: 10px;
-    
+    background-color: #B1B181;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 10px;  
 }
 
 nav ul {
@@ -36,10 +36,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
+    background-color: #D9D9D9;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 18px;
-    font-family: "Fondamento", cursive;
+    font-size: 70%;
     padding: 8px 16px;
     transition: background-color 0.3s;
 }
@@ -49,4 +50,33 @@ nav ul li a:hover {
     background-color: #03071e;
     border-radius: 4px;
 }
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#Imagen_Presentacion {
+    position: relative;
+    width: 100%;
+}
+
+.Texto_Presentacion {
+    display: flex;
+    
+    #Texto {
+        position: flex;
+        justify-content: flex-start;
+    }
+    
+    #About_Us {
+        position: flex;
+        justify-content: flex-end;
+    }
+}
+
+
 
