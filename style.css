@@ -39,7 +39,7 @@ body {
 }
 
 .nav__logo {
-    font-size: 4rem;
+    height: 64px;
     z-index: 1;
 } 
 
