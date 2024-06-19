@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #D0D0B3;
 }
@@ -11,7 +17,7 @@ body {
 
 .head {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
-    background-image: url(assets/Designer.jpeg);
+    background-image: url(img/naturaleza1.jpg);
     background-size: cover;
     min-height: 500px;
     height: 100vh;
