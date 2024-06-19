@@ -28,7 +28,7 @@ body {
 .grid__item:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
-    background-color: darkseagreen;
+    background-color: rgb(255, 255, 255);
 }
 
 .grid__container {
@@ -39,9 +39,7 @@ body {
     gap: 20px;
     padding: 20px;
     
-    /* Columnas */
-    /* grid-template-columns: repeat(auto-fit min-max (250px, 1fr)); */
-    /* ancho de las filas (segun el cont de los elementos. Para variar esa prop cambiar valor auto*/
+    
 }
 
 /* manipular items(mediante una class */
