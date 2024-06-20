@@ -6,7 +6,7 @@
 
 body {
     font-size: 1rem;
-    background-color: rgb(49, 48, 48);
+    background-color: rgb(236, 231, 231);
 }
 
 .galeria__grid {
@@ -21,10 +21,10 @@ body {
     align-items: center;
     justify-content: center;
     
-    border: 1px solid rgb(36, 19, 19);
-    border-radius: 5px;
-    box-shadow: 8px 10px 10px;
-    transition: transform 0.3s ease-in-out;
+    /* border: 1px solid rgb(36, 19, 19); */
+    /* border-radius: 5px; */
+    box-shadow: 8px 10px 20px;
+    /* transition: transform 0.3s ease-in-out; */
 
     background-size: cover;
     background-position: center;
@@ -49,7 +49,7 @@ body {
 
 .grid__item:hover {
     filter: opacity(0.9);
-    transform: scale(1.04);
+    /* transform: scale(1.04); */
 }
 
 .grid__container {
