@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+
+
+.main {
+    max-width: 1200px;
+    display: grid;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
+    margin: 0 auto;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    
+    grid-template-areas: 
+    "main"
+    "llamanos"llamada a la accion
+    "imagen1"
+    "nosotros"
+    "imagen2";
+}
+
+.main__vav, .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.main__albun {
+    width: 90%;
+    grid-area: "main";
+
+    background-image: url(personas3.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main__nav {
+    display: flex;
+    
+
+}
+
+.main__links {
+    display: none;
+    
+}
+
+.main__logo {
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
+
+.main__albun__dos {
+    max-width: 90%;
+    min-height: 100vh;
+    grid-area: "llamanos";
+
+}
+
+.main__contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__titulo {
+    color: black;
+    font-size: 20px;
+}
+.main__parrafo {
+    line-height: 1.5;
+    margin: 1rem 0 1rem;
+    color: rgb(94, 94, 91);
+    
+}
+
+.main__parrafo__nosotros {
+    line-height: 1.5;
+    margin: 1rem 0 0 0;
+    color: rgb(94, 94, 91);
+}
+
+.main__llamanos {
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(94, 94, 91);
+
+}
+.main__derecha {
+    margin-left: 30px;
+    
+}
+
+.main__background {
+    grid-area: "imagen1";
+    height: 100%;
+    width: 90%;
+    
+    background-image: url(personas2.jpg);
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__nosotros {
+    grid-area: "nosotros";
+
+}
+
+.main__background__segundo {
+    grid-area: "imagen2";
+    background-image: url(imagen2.jpg);
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
