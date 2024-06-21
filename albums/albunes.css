@@ -118,8 +118,8 @@ body {
 .main__background {
     grid-area: "imagen1";
     width: 90%;
-    height: 100%;
-    
+    min-height: 550px;
+
     background-image: url(personas2.jpg);
     min-height: 250px;
     background-size: cover;
@@ -136,7 +136,7 @@ body {
 .main__background__segundo {
     grid-area: "imagen2";
     width: 90%;
-    min-height: 100%;
+    min-height: 550px;
 
     margin: 1rem;
     
