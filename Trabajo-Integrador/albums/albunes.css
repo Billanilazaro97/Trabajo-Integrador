@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    background-color: rgb(244, 242, 241);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px;
+}
+
+.main {
+    background-color: #fffefe;
+    max-width: 1200px;
+    display: grid;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+   
+    margin: 0 auto;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    
+    grid-template-areas: 
+    "main"
+    "llamanos"
+    "imagen1"
+    "nosotros"
+    "imagen2";
+}
+
+.main__nav, .container {
+    
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.main__albun {
+    width: 90%;
+    grid-area: main;
+
+    background-image: url(personas3.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main__nav {
+    display: flex;
+}
+
+.main__links {
+    display: none;
+    
+}
+
+.main__logo {
+    margin: 0 auto;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #fffefe;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 40px;
+    font-size: 2.5rem;
+}
+
+.main__hamburguesa {
+    width: 20px;
+}
+
+.main__albun__dos, .main__nosotros {
+    width: 90%;
+    grid-area: llamanos;
+
+}
+
+.main__contenido, .main__contenido__nosotros {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main__titulo {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.main__titulo__nosotros {
+    color: black;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+}
+
+.main__parrafo {
+    line-height: 1.5;
+    margin: 1rem 0 2rem;
+    color: rgb(94, 94, 91);
+    
+}
+
+.main__parrafo__nosotros {
+    line-height: 1.5;
+    margin: 1rem 0 0 0;
+    color: rgb(94, 94, 91);
+}
+
+.main__llamanos {
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(94, 94, 91);
+
+}
+.main__derecha {
+    margin-left: 30px;
+}
+
+.main__background {
+    grid-area: imagen1;
+    width: 90%;
+    /* min-height: 550px; */
+
+    min-height: 500px;
+    height: 100%;
+    background-image: url(personas2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.main__nosotros {
+    grid-area: nosotros;
+
+}
+
+.main__background__segundo {
+    grid-area: imagen2;
+    background-image: url(imagen2.jpg);
+    width: 90%;
+    min-height: 250px;
+    height: 100%;
+    margin: 1rem;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ojala quede */
+
+@media (min-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 70px 0;
+    }
+    .main {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "main main main main llamanos llamanos llamanos"
+        "main main main main llamanos llamanos llamanos"
+        "main main main main llamanos llamanos llamanos"
+        "imagen1 imagen1 nosotros nosotros nosotros imagen2 imagen2"
+        "imagen1 imagen1 nosotros nosotros nosotros imagen2 imagen2";
+    }
+
+    .main__hamburguesa {
+        display: none;
+
+    }
+
+    .main__background,
+    .main__background__segundo {
+        width: 80%;
+    }
+
+    .main__links {
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1rem;
+        margin-left: 10%;
+    }
+
+    .main__logo {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .main__link {        
+        text-decoration: none;
+        color: #fffefe;
+        font-weight: 600;
+    }
+    .main__link:hover {
+        color:rgb(0, 0, 0)
+    }
+    
+
+    .main__links {
+        list-style: none;
+        color: #fffefe;
+        text-shadow: 1px 1px 10px #000000;
+    }
+
+    
+}
+
+
+
